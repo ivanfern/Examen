@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Formularios</title>
+</head>
+<body>
+<center>
+    <h1>Calculadora de sueldo</h1>
+    <p>Ingrese los datos solicitados.</p>
+    <form action="" method="get" name="formulario" >
+        <br>
+        Sueldo: <input type="text" name="txtSueldo" size="20" onkeypress="return validarn(event,this)" onchange="Decimales(this)" >
+        <!-- <br> -->
+        <!-- Edad: <input type="number" min="00" max="99" name="edad" > -->
+        <br>
+        Monto Venta: 
+		<!-- <input type="text" name="txtVenta" size="20" onkeypress="return validarn(event,'Venta')" onchange="Decimales('Venta')"  > -->
+        <br>
+		<a id="lblComisiones"></a><br>
+		<a id="lblSumatoria"></a>
+		<br>
+		<table name="Tabla" id="Tabla">
+			<tr><td><input type="text" class="Ventas"  size="20" onkeypress="return validarn(event,this)" onchange="Decimales(this)"  ></td></tr>
+		</table>
+		<tbody id="tbody"></tbody>
+        <input type="button" value="Agregar" name="btnAgregar" onclick="Agregar()" >
+        <input type="button" value="Calcular" name="btnCalcular" onclick="Calcular()">
+		<a name="lblComision" ></a>
+		<a name="lbl"></a>
+		<a></a>
+    </form>
+	<br>
+	<HR>
+	
+	<footer>
+	<p>
+	Universidad ICEL Ermita<br>
+	Fernandez Valle Ivan<br>
+	Sistemas de Informacion
+	</p>
+	</footer>
+	</center>
+</body>
+<script language="javascript" type="text/javascript" src="js/JavaScript.js"></script>
+</html>
+
